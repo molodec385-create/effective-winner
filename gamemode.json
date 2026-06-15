@@ -1,0 +1,37 @@
+{
+  "ApiVersion": 2,
+  "Name": "Chest Farm Mode",
+  "Description": "Быстрые раунды (5 сек) с выдачей бронзовых, серебряных и золотых сундуков",
+  "StartClientVersion": 1,
+  "PopupsEnabled": true,
+  "MapLists": [
+    {
+      "MapListId": 1,
+      "Name": "All Maps"
+    }
+  ],
+  "Parameters": {
+    "Bool": [
+      {
+        "Name": "MapRotation",
+        "DisplayName": "Map Rotation",
+        "Default": true,
+        "Order": 1
+      }
+    ],
+    "Dropdown": [
+      {
+        "Name": "GameLength",
+        "DisplayName": "Game Length",
+        "Default": "S",
+        "Order": 2,
+        "Variants": [
+          { "Name": "S", "DisplayName": "Short" },
+          { "Name": "M", "DisplayName": "Medium" },
+          { "Name": "L", "DisplayName": "Long" },
+          { "Name": "XL", "DisplayName": "Very Long" }
+        ]
+      }
+    ]
+  }
+}
